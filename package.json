@@ -2,6 +2,7 @@
   "name": "ushkovet-clinic",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "npm@11.6.2",
   "engines": {
     "node": ">=22.13.0"
   },
