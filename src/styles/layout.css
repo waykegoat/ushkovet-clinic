@@ -33,6 +33,7 @@
   height: 42px;
   place-items: center;
   border-radius: 14px;
+  overflow: hidden;
   border: 1px solid var(--color-line);
   background: var(--color-white);
   box-shadow: 0 6px 18px rgb(36 82 166 / 10%);
