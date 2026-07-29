@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Menu, PawPrint, Phone, X } from "@lucide/vue";
+import { Menu, Phone, X } from "@lucide/vue";
 import { storeToRefs } from "pinia";
 import { useI18n } from "vue-i18n";
 import { RouterLink, useRoute } from "vue-router";
@@ -12,6 +12,7 @@ const uiStore = useUiStore();
 const contentStore = useContentStore();
 const { isMenuOpen } = storeToRefs(uiStore);
 const { t } = useI18n();
+const logoUrl = `${import.meta.env.BASE_URL}logo.jpg`;
 
 const links = [
   { to: "/", label: "nav.home" },
@@ -25,7 +26,7 @@ const links = [
     <div class="container header-inner">
       <RouterLink class="brand" to="/" aria-label="УшкоВет — на главную">
         <span class="brand-mark" aria-hidden="true">
-          <PawPrint :size="22" :stroke-width="2.1" />
+          <img :src="logoUrl" alt="" />
         </span>
         <span>
           <strong>УшкоВет</strong>

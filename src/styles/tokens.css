@@ -1,18 +1,18 @@
 :root {
-  --color-ink: #16312f;
-  --color-ink-soft: #526764;
-  --color-primary: #0f514b;
-  --color-primary-hover: #0b433e;
-  --color-primary-light: #dcece7;
-  --color-mint: #eff7f3;
-  --color-cream: #f7f3eb;
-  --color-paper: #fffdf9;
+  --color-ink: #16254e;
+  --color-ink-soft: #5c6989;
+  --color-primary: #2452a6;
+  --color-primary-hover: #193f86;
+  --color-primary-light: #e3ebff;
+  --color-mint: #f1f5ff;
+  --color-cream: #f8f7ff;
+  --color-paper: #fefeff;
   --color-white: #ffffff;
-  --color-line: #dbe4df;
-  --color-line-strong: #becdc6;
-  --color-accent: #ef8354;
-  --color-accent-light: #fff0e8;
-  --color-success: #2a775d;
+  --color-line: #dbe3f3;
+  --color-line-strong: #bdc9e4;
+  --color-accent: #e77ea5;
+  --color-accent-light: #fff0f6;
+  --color-success: #287c6c;
   --color-danger: #b33b3b;
   --color-warning: #9c6419;
 
@@ -46,9 +46,9 @@
   --radius-xl: 2.25rem;
   --radius-pill: 999px;
 
-  --shadow-sm: 0 8px 28px rgb(18 55 51 / 8%);
-  --shadow-md: 0 20px 50px rgb(18 55 51 / 13%);
-  --shadow-lg: 0 34px 90px rgb(13 51 47 / 18%);
+  --shadow-sm: 0 8px 28px rgb(36 82 166 / 8%);
+  --shadow-md: 0 20px 50px rgb(36 82 166 / 13%);
+  --shadow-lg: 0 34px 90px rgb(25 63 134 / 18%);
 
   --container: 1200px;
   --header-height: 82px;

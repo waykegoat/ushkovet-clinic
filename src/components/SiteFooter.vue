@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ArrowUpRight, Clock3, MapPin, PawPrint, Phone } from "@lucide/vue";
+import { ArrowUpRight, Clock3, MapPin, Phone } from "@lucide/vue";
 import { RouterLink } from "vue-router";
 
 import { useContentStore } from "@/stores/content";
 
 const contentStore = useContentStore();
+const logoUrl = `${import.meta.env.BASE_URL}logo.jpg`;
 </script>
 
 <template>
@@ -13,7 +14,7 @@ const contentStore = useContentStore();
       <div class="footer-brand">
         <RouterLink class="brand brand-inverse" to="/">
           <span class="brand-mark" aria-hidden="true">
-            <PawPrint :size="22" />
+            <img :src="logoUrl" alt="" />
           </span>
           <span>
             <strong>УшкоВет</strong>

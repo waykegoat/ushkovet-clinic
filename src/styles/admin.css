@@ -1,6 +1,6 @@
 .admin-main {
   min-height: 100vh;
-  background: #f3f5f4;
+  background: #f4f6ff;
 }
 
 .admin-shell {
@@ -16,7 +16,7 @@
   height: 100vh;
   padding: var(--space-6);
   color: var(--color-white);
-  background: #102f2c;
+  background: #162b5c;
   flex-direction: column;
 }
 
@@ -33,7 +33,7 @@
   place-items: center;
   border-radius: var(--radius-sm);
   color: var(--color-primary);
-  background: #dbece6;
+  background: #e3ebff;
   font-weight: 760;
   letter-spacing: -0.04em;
 }
@@ -45,7 +45,7 @@
 }
 
 .admin-brand small {
-  color: #88a6a0;
+  color: #a9bce8;
   font-size: 0.68rem;
 }
 
@@ -62,7 +62,7 @@
   gap: var(--space-3);
   padding-inline: var(--space-4);
   border-radius: var(--radius-sm);
-  color: #bad0ca;
+  color: #c2ceed;
   background: transparent;
   cursor: pointer;
   font-size: var(--text-sm);
@@ -82,8 +82,8 @@
   margin-left: auto;
   place-items: center;
   border-radius: var(--radius-pill);
-  color: #133d38;
-  background: #a9d6c9;
+  color: #193f86;
+  background: #f6b6cf;
   font-size: 0.68rem;
   font-weight: 750;
 }
@@ -100,7 +100,7 @@
   gap: var(--space-3);
   padding: var(--space-3);
   border-radius: var(--radius-sm);
-  color: #91ada7;
+  color: #adc0e9;
   font-size: var(--text-sm);
 }
 

@@ -39,7 +39,7 @@ useHead({
         "@type": "VeterinaryCare",
         name: "УшкоВет",
         url: "https://ushkovet.ru",
-        telephone: "+79012482593",
+        telephone: "+79991385461",
         image: "https://ushkovet.ru/og.jpg",
         address: {
           "@type": "PostalAddress",

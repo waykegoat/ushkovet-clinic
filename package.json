@@ -10,6 +10,7 @@
     "dev": "vite",
     "build": "vite-ssg build && vite build --config vite.worker.config.ts && node scripts/finalize-build.mjs",
     "build:pages": "vite-ssg build && node scripts/prepare-pages.mjs",
+    "deploy": "npm run build && wrangler deploy",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest run --coverage",
