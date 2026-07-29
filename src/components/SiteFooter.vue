@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 import { useContentStore } from "@/stores/content";
 
 const contentStore = useContentStore();
-const logoUrl = `${import.meta.env.BASE_URL}logo.svg`;
+const logoUrl = `${import.meta.env.BASE_URL}logo.jpg`;
 </script>
 
 <template>
