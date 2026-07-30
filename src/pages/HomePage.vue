@@ -40,7 +40,7 @@ useHead({
         name: "УшкоВет",
         url: "https://ushkovet.ru",
         telephone: "+79991385461",
-        image: "https://ushkovet.ru/images/1.jpg",
+        image: "https://ushkovet.ru/images/4.jpg",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Верхне-Печёрская улица, 14",
@@ -126,7 +126,7 @@ const reviews = [
         <div class="hero-visual">
           <div class="hero-image-wrap">
             <img
-              src="/images/1.jpg"
+              src="/images/4.jpg"
               alt="Ветеринар клиники УшкоВет бережно держит кошку"
               width="506"
               height="271"
