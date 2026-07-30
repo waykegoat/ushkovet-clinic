@@ -40,7 +40,7 @@ useHead({
         name: "УшкоВет",
         url: "https://ushkovet.ru",
         telephone: "+79991385461",
-        image: "https://ushkovet.ru/og.jpg",
+        image: "https://ushkovet.ru/images/1.jpg",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Верхне-Печёрская улица, 14",
@@ -126,7 +126,7 @@ const reviews = [
         <div class="hero-visual">
           <div class="hero-image-wrap">
             <img
-              src="/images/clinic-05.webp"
+              src="/images/1.jpg"
               alt="Ветеринар клиники УшкоВет бережно держит кошку"
               width="506"
               height="271"
@@ -188,7 +188,7 @@ const reviews = [
       <div class="container about-grid">
         <div class="about-visual">
           <img
-            src="/images/clinic-04.webp"
+              src="/images/2.jpg"
             alt="Кот на осмотре в ветеринарной клинике УшкоВет"
             width="506"
             height="271"
@@ -246,7 +246,7 @@ const reviews = [
         </div>
         <div class="doctor-photo">
           <img
-            src="/images/clinic-02.webp"
+              src="/images/3.jpg"
             alt="Ветеринарный врач Александр Сергеевич Ушаков"
             width="506"
             height="271"

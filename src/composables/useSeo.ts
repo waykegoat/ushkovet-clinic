@@ -14,7 +14,7 @@ export function useSeo({
   title,
   description,
   path,
-  image = "/og.jpg",
+  image = "/images/1.jpg",
   noindex = false,
 }: SeoInput): void {
   const canonical = new URL(path, canonicalOrigin).toString();

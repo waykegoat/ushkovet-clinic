@@ -80,7 +80,7 @@ useSeo({
     <section class="section clinic-photo-section">
       <div class="container clinic-photo-grid">
         <img
-          src="/images/clinic-hero.webp"
+          src="/images/3.jpg"
           alt="Вход в ветеринарную клинику УшкоВет на Верхне-Печёрской улице"
           width="672"
           height="378"
