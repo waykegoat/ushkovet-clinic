@@ -2,14 +2,14 @@
 import { ArrowUpRight } from "@lucide/vue";
 
 import type { Service } from "@/content/defaultContent";
-import { useUiStore } from "@/stores/ui";
+import { useContentStore } from "@/stores/content";
 
 defineProps<{
   service: Service;
   index?: number;
 }>();
 
-const uiStore = useUiStore();
+const contentStore = useContentStore();
 </script>
 
 <template>
@@ -24,14 +24,13 @@ const uiStore = useUiStore();
     </div>
     <div class="service-card-bottom">
       <strong>{{ service.price }}</strong>
-      <button
+      <a
         class="icon-button"
-        type="button"
-        :aria-label="`Записаться на услугу «${service.title}»`"
-        @click="uiStore.openAppointment"
+        :href="`tel:${contentStore.content.settings.phoneHref}`"
+        :aria-label="`Позвонить по поводу услуги «${service.title}»`"
       >
         <ArrowUpRight :size="20" />
-      </button>
+      </a>
     </div>
   </article>
 </template>

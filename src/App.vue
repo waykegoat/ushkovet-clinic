@@ -2,7 +2,6 @@
 import { onMounted } from "vue";
 import { RouterView, useRoute } from "vue-router";
 
-import AppointmentDialog from "@/components/AppointmentDialog.vue";
 import SiteFooter from "@/components/SiteFooter.vue";
 import SiteHeader from "@/components/SiteHeader.vue";
 import { useContentStore } from "@/stores/content";
@@ -23,6 +22,5 @@ onMounted(() => {
       <RouterView />
     </main>
     <SiteFooter v-if="!route.meta.admin" />
-    <AppointmentDialog v-if="!route.meta.admin" />
   </div>
 </template>

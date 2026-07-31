@@ -17,10 +17,8 @@ import { useHead } from "@unhead/vue";
 import ServiceCard from "@/components/ServiceCard.vue";
 import { useSeo } from "@/composables/useSeo";
 import { useContentStore } from "@/stores/content";
-import { useUiStore } from "@/stores/ui";
 
 const contentStore = useContentStore();
-const uiStore = useUiStore();
 const settings = computed(() => contentStore.content.settings);
 
 useSeo({
@@ -100,13 +98,13 @@ const reviews = [
           <h1>{{ settings.heroTitle }}</h1>
           <p class="hero-lead">{{ settings.heroText }}</p>
           <div class="hero-actions">
-            <button
+            <a
               class="button button-primary button-large"
-              @click="uiStore.openAppointment"
+              :href="`tel:${settings.phoneHref}`"
             >
-              Записаться на приём
+              Позвонить в клинику
               <ArrowRight :size="19" />
-            </button>
+            </a>
             <a class="button button-ghost button-large" :href="`tel:${settings.phoneHref}`">
               {{ settings.phone }}
             </a>
@@ -188,7 +186,7 @@ const reviews = [
       <div class="container about-grid">
         <div class="about-visual">
           <img
-              src="/images/2.jpg"
+            src="/images/2.jpg"
             alt="Кот на осмотре в ветеринарной клинике УшкоВет"
             width="506"
             height="271"
@@ -246,7 +244,7 @@ const reviews = [
         </div>
         <div class="doctor-photo">
           <img
-              src="/images/3.jpg"
+            src="/images/3.jpg"
             alt="Ветеринарный врач Александр Сергеевич Ушаков"
             width="506"
             height="271"
@@ -294,9 +292,9 @@ const reviews = [
           <p>Опишите ситуацию — администратор поможет выбрать подходящий формат приёма.</p>
         </div>
         <div class="cta-actions">
-          <button class="button button-light button-large" @click="uiStore.openAppointment">
-            Оставить заявку
-          </button>
+          <a class="button button-light button-large" :href="`tel:${settings.phoneHref}`">
+            Позвонить в клинику
+          </a>
           <a class="cta-phone" :href="`tel:${settings.phoneHref}`">{{ settings.phone }}</a>
         </div>
       </div>

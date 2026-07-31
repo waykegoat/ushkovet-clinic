@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { AlertCircle, ArrowUpRight, Clock3, MapPin, Phone } from "@lucide/vue";
+import { ArrowUpRight, Clock3, MapPin, Phone } from "@lucide/vue";
 
-import InquiryForm from "@/components/InquiryForm.vue";
 import MapSection from "@/components/MapSection.vue";
 import { useSeo } from "@/composables/useSeo";
 import { useContentStore } from "@/stores/content";
@@ -25,8 +24,8 @@ useSeo({
           <h1>Запишитесь удобным способом</h1>
         </div>
         <p>
-          Позвоните или оставьте заявку. Если состояние питомца резко ухудшилось,
-          обязательно сообщите об этом администратору.
+          Позвоните в клинику, чтобы уточнить время приёма. Если состояние питомца резко
+          ухудшилось, обязательно сообщите об этом администратору.
         </p>
       </div>
     </section>
@@ -53,29 +52,6 @@ useSeo({
     </section>
 
     <MapSection />
-
-    <section class="section contact-form-section">
-      <div class="container contact-form-grid">
-        <div>
-          <p class="eyebrow">Онлайн-заявка</p>
-          <h2>Подберём удобное время приёма</h2>
-          <p class="section-lead">
-            Оставьте контакты и коротко опишите ситуацию. Заявка не заменяет экстренную
-            ветеринарную помощь.
-          </p>
-          <div class="urgent-note">
-            <AlertCircle :size="21" />
-            <p>
-              При нарушении дыхания, потере сознания, судорогах или сильном кровотечении
-              сразу звоните по телефону.
-            </p>
-          </div>
-        </div>
-        <div class="form-card">
-          <InquiryForm />
-        </div>
-      </div>
-    </section>
 
     <section class="section clinic-photo-section">
       <div class="container clinic-photo-grid">

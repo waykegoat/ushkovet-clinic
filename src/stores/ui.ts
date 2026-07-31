@@ -3,7 +3,6 @@ import { ref } from "vue";
 
 export const useUiStore = defineStore("ui", () => {
   const isMenuOpen = ref(false);
-  const isAppointmentOpen = ref(false);
 
   function toggleMenu(): void {
     isMenuOpen.value = !isMenuOpen.value;
@@ -13,21 +12,9 @@ export const useUiStore = defineStore("ui", () => {
     isMenuOpen.value = false;
   }
 
-  function openAppointment(): void {
-    isAppointmentOpen.value = true;
-    closeMenu();
-  }
-
-  function closeAppointment(): void {
-    isAppointmentOpen.value = false;
-  }
-
   return {
     isMenuOpen,
-    isAppointmentOpen,
     toggleMenu,
     closeMenu,
-    openAppointment,
-    closeAppointment,
   };
 });

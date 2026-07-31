@@ -5,10 +5,8 @@ import { computed, ref } from "vue";
 import ServiceCard from "@/components/ServiceCard.vue";
 import { useSeo } from "@/composables/useSeo";
 import { useContentStore } from "@/stores/content";
-import { useUiStore } from "@/stores/ui";
 
 const contentStore = useContentStore();
-const uiStore = useUiStore();
 const activeCategory = ref("Все");
 const search = ref("");
 
@@ -137,10 +135,13 @@ const filteredServices = computed(() => {
           <h2>Не уверены, какой приём нужен?</h2>
           <p>Опишите симптомы администратору — мы подскажем, с чего начать.</p>
         </div>
-        <button class="button button-primary button-large" @click="uiStore.openAppointment">
-          Записаться
+        <a
+          class="button button-primary button-large"
+          :href="`tel:${contentStore.content.settings.phoneHref}`"
+        >
+          Позвонить в клинику
           <ArrowRight :size="19" />
-        </button>
+        </a>
       </div>
     </section>
   </div>

@@ -4,7 +4,6 @@ import { beforeEach, describe, expect, it } from "vitest";
 
 import ServiceCard from "@/components/ServiceCard.vue";
 import type { Service } from "@/content/defaultContent";
-import { useUiStore } from "@/stores/ui";
 
 const service: Service = {
   id: "therapy",
@@ -31,14 +30,11 @@ describe("ServiceCard", () => {
     expect(wrapper.text()).toContain("02");
   });
 
-  it("opens the appointment dialog", async () => {
+  it("links to the clinic phone", () => {
     const wrapper = mount(ServiceCard, {
       props: { service },
     });
-    const uiStore = useUiStore();
 
-    await wrapper.get("button").trigger("click");
-
-    expect(uiStore.isAppointmentOpen).toBe(true);
+    expect(wrapper.get("a.icon-button").attributes("href")).toBe("tel:+79991385461");
   });
 });

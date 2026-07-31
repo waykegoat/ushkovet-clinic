@@ -54,9 +54,12 @@ const links = [
           <Phone :size="18" />
           <span>{{ contentStore.content.settings.phone }}</span>
         </a>
-        <button class="button button-primary header-book" @click="uiStore.openAppointment">
-          {{ t("actions.book") }}
-        </button>
+        <a
+          class="button button-primary header-book"
+          :href="`tel:${contentStore.content.settings.phoneHref}`"
+        >
+          {{ t("actions.call") }}
+        </a>
         <button
           class="menu-toggle"
           type="button"
@@ -81,9 +84,12 @@ const links = [
         >
           {{ t(link.label) }}
         </RouterLink>
-        <button class="button button-primary" @click="uiStore.openAppointment">
-          {{ t("actions.book") }}
-        </button>
+        <a
+          class="button button-primary"
+          :href="`tel:${contentStore.content.settings.phoneHref}`"
+        >
+          {{ t("actions.call") }}
+        </a>
       </nav>
     </div>
   </header>
