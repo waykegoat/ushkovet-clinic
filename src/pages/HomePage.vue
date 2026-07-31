@@ -36,9 +36,9 @@ useHead({
         "@context": "https://schema.org",
         "@type": "VeterinaryCare",
         name: "УшкоВет",
-        url: "https://ushkovet.ru",
+        url: "https://ushkovet-clinic.ru",
         telephone: "+79991385461",
-        image: "https://ushkovet.ru/images/4.jpg",
+        image: "https://ushkovet-clinic.ru/images/4.jpg",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Верхне-Печёрская улица, 14",

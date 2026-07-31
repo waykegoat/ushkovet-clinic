@@ -8,7 +8,7 @@ interface SeoInput {
   noindex?: boolean;
 }
 
-const canonicalOrigin = "https://ushkovet.ru";
+const canonicalOrigin = "https://ushkovet-clinic.ru";
 
 export function useSeo({
   title,
