@@ -32,6 +32,17 @@ GitHub Pages используется только для демонстраци
 ```powershell
 npm install
 npx wrangler login
+```
+
+Для текущей версии с записью по телефону D1 не нужна: сайт работает со стартовым контентом из сборки. Поэтому сразу выполните:
+
+```powershell
+npm run deploy
+```
+
+Панель `/admin` и редактирование контента подключаются отдельно, если клинике это понадобится. Тогда создайте D1:
+
+```powershell
 npx wrangler d1 create ushkovet-production
 ```
 
@@ -50,7 +61,7 @@ database_id = "ВАШ_DATABASE_ID"
 npx wrangler d1 execute ushkovet-production --remote --file=./drizzle/0000_lonely_winter_soldier.sql
 ```
 
-Соберите и опубликуйте Worker со статическими файлами:
+После этого снова соберите и опубликуйте Worker со статическими файлами:
 
 ```powershell
 npm run deploy
